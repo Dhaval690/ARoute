@@ -7,10 +7,10 @@ public class SceneLoader : MonoBehaviour
 {
     public void LoadPage2()
     {
-        SceneManager.LoadScene("TTSPageTester");
+        SceneManager.LoadScene(1); // Loads in TTSPageTester
     }
     public void LoadPage1()
     {
-        SceneManager.LoadScene("SettingsPage");
+        SceneManager.LoadScene(0); // Loads in SettingsPage
     }
 }

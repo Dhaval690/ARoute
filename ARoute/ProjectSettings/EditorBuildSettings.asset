@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SettingsPage.unity
+    guid: 0aee9253698acda4b9025468c6113b4c
+  - enabled: 1
+    path: Assets/Scenes/TTSPageTester.unity
+    guid: 2e2f7660d76be854785a709136c554de
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 4be0117b46d62494c8e591cef70d9428, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 502a4389b6b847a4da11607141ec932d, type: 2}
