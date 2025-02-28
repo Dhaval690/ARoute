@@ -7,10 +7,16 @@ public class SceneLoader : MonoBehaviour
 {
     public void LoadPage2()
     {
-        SceneManager.LoadScene(1); // Loads in TTSPageTester
+        Debug.Log("Button Getting Clicked"); // Testing whether button gets clicked
+        SceneManager.LoadScene("TTSPageTester"); // Loads in TTSPageTester
     }
     public void LoadPage1()
     {
-        SceneManager.LoadScene(0); // Loads in SettingsPage
+        SceneManager.LoadScene("SettingsPage"); // Loads in SettingsPage
     }
+
+    //private void Start()
+    //{
+    //    SceneManager.LoadScene("TTSPageTester");
+    //}
 }
