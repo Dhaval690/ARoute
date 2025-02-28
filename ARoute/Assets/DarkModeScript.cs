@@ -7,12 +7,14 @@ public class DarkModeScript : MonoBehaviour
     public Image background; // Assign the background UI image
     public TextMeshProUGUI[] texts; // Assign all text elements
     public Button darkModeButton; // Assign the button
-    public Button[] buttonsToChange; // Dedicated light mode button
-    public Color darkModeButtonColor; // Set light mode color for buttons
+    public Button[] buttonsToChange; // Dedicated dark mode button
+    public Color darkModeButtonColor; // Set dark mode colour for buttons
+    //public Color darkBackgroundForButtons; // Set dark mode colour for background of buttons
+    public Image buttonsBox; // Set dark mode colour for buttons box
 
     void Start()
     {
-        // Attach the event listener only to Light Mode button
+        // Attach the event listener only to Dark Mode button
         darkModeButton.onClick.AddListener(EnableDarkMode);
     }
 
@@ -20,8 +22,9 @@ public class DarkModeScript : MonoBehaviour
     {
         Debug.Log("Dark Mode Button Clicked!"); // Check if button is being triggered
 
-        // Change UI to Light Mode
-        background.color = Color.black; // Light background
+        // Change UI to Dark Mode
+        background.color = Color.black; // Dark background
+        buttonsBox.color = Color.grey; // White buttons box
         foreach (TextMeshProUGUI txt in texts)
         {
             txt.color = Color.white; // Dark text
@@ -35,7 +38,7 @@ public class DarkModeScript : MonoBehaviour
             btn.GetComponent<Image>().color = darkModeButtonColor; // Changes colour of buttons to the chosen colour
         }
 
-        // Save light mode preference
+        // Save dark mode preference
         PlayerPrefs.SetInt("DarkMode", 1);
         PlayerPrefs.Save();
     }
