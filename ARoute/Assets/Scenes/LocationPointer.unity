@@ -1869,6 +1869,10 @@ PrefabInstance:
       value: LocationPointerSelect, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 402051411548784366, guid: a1ad082a1856c1c45bac59422a6f4a26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: SettingsPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 402051411548784366, guid: a1ad082a1856c1c45bac59422a6f4a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
