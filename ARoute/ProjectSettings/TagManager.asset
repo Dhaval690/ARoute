@@ -11,6 +11,8 @@ TagManager:
   - 
   - Water
   - UI
+  - TextBox
+  - Text
   - 
   - 
   - 
@@ -34,8 +36,6 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - XR Simulation
   - 
   m_SortingLayers:
   - name: Default

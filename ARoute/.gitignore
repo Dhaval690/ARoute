@@ -72,41 +72,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# Ignore Unity auto-generated files and caches
-/[Aa]ssets/AddressableAssetsData/
-/[Ll]ibrary/
-/[Ll]ogs/
-/[Tt]emp/
-/[Bb]uilds/
-/[Bb]uild/
-/[Oo]bj/
-/UserSettings/
-/MemoryCaptures/
-/Recordings/
-
-# Ignore Asset Bundles
-/[Aa]ssets/[Ss]treamingAssets/
-/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/
-
-# Ignore Cache & Logs
-*.log
-*.tmp
-*.bak
-*.cache
-*.gz
-
-# Ignore Large File Types (adjust based on your needs)
-*.psd
-*.tiff
-*.tif
-*.zip
-*.rar
-*.7z
-*.tar
-*.mp4
-*.mov
-*.avi
-*.wav
-*.ogg
-*.mp3
-
+/Library
