@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 41612352}
   - component: {fileID: 41612351}
   - component: {fileID: 41612350}
+  - component: {fileID: 41612354}
   m_Layer: 5
   m_Name: Canvas1
   m_TagString: Untagged
@@ -227,6 +228,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &41612354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41612349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b69ddb07260943469248c4b30d26e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &200050410
 GameObject:
   m_ObjectHideFlags: 0
@@ -2354,7 +2367,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1351014436}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 41612354}
+        m_TargetAssemblyTypeName: SettingBottomPanel, Assembly-CSharp
+        m_MethodName: GoToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GuidePage
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1351014436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3452,7 +3477,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1890704709}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 41612354}
+        m_TargetAssemblyTypeName: SettingBottomPanel, Assembly-CSharp
+        m_MethodName: GoToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ColourOptions
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1890704709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3651,7 +3688,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1992632823}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 41612354}
+        m_TargetAssemblyTypeName: SettingBottomPanel, Assembly-CSharp
+        m_MethodName: GoToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SettingsPage
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1992632823
 MonoBehaviour:
   m_ObjectHideFlags: 0
