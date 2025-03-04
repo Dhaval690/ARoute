@@ -1,22 +1,24 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public void LoadPage2()
-    {
-        Debug.Log("Button Getting Clicked"); // Testing whether button gets clicked
-        SceneManager.LoadScene("TTSPageTester"); // Loads in TTSPageTester
-    }
-    public void LoadPage1()
+    public void LoadSettingsPage()
     {
         SceneManager.LoadScene("SettingsPage"); // Loads in SettingsPage
     }
+    public void LoadHomePage()
+    {
+        Debug.Log("🏠 Home Button Clicked");
 
-    //private void Start()
-    //{
-    //    SceneManager.LoadScene("TTSPageTester");
-    //}
+        if (SceneManager.GetActiveScene().name == "LocationPointer")
+        {
+            Debug.Log("Already in Home Scene, no need to reload.");
+            return;
+        }
+
+        SceneManager.LoadScene("GuidePage"); // Loads in LocationPointer Page
+    }
 }
